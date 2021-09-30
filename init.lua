@@ -21,6 +21,10 @@ hs.hotkey.bind( HYPER, "M", meuh.switch)
 hs.hotkey.bind({"ctrl", "cmd"}, "T", function()
     hs.application.open("com.googlecode.iterm2")
 end)
+
+hs.hotkey.bind({"ctrl", "cmd"}, "F", function()
+    hs.application.open("firefox")
+end)
 --
 
 -- Launches VSCodium in Pablo
@@ -31,4 +35,9 @@ end)
 -- Launches VSCodium in iode mitm
 hs.hotkey.bind( HYPER, "I", function()
     hs.execute("/Applications/VSCodium.app/Contents/MacOS/Electron ~/Workspace/iode/mitm-app/")
+end)
+
+-- Launches VSCodium in Vinymatic
+hs.hotkey.bind( HYPER, "V", function()
+    hs.execute("/Applications/VSCodium.app/Contents/MacOS/Electron ~/Workspace/Vinymatic/mobile/")
 end)
